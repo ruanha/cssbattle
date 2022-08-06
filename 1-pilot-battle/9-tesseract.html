@@ -1,0 +1,92 @@
+<div class="rectangle">
+  <div class="square-container">
+    <div class="square outer">
+      <div class="square inner">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #222730;
+  }
+  .rectangle {
+    width: 100%;
+    margin: 75px 0;
+    height: 150px;
+    background: #4CAAB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .square-container {
+    transform: rotate(45deg);
+  }
+  .inner {
+    background: #4CAAB3;
+    width: 150px;
+    height: 150px;
+  }
+  .outer {
+    background: #222730;
+    width: 250px;
+    height: 250px;
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
+    background: #393E46;
+    border-radius: 100%;
+  }
+</style>
+
+
+<!--
+    interesting the below solution won't give 100% correct result (99.8% correct).
+    The transform/rotate on an element with a border has the same issue with the edge of the border, as seen with the box-shadow with inset.
+
+<div class="rectangle">
+  <div class="square">
+  	<div class="circle"></div>
+  </div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #222730;
+  }
+  .rectangle {
+    width: 100%;
+    margin: 75px 0;
+    height: 150px;
+    background: #4CAAB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .square {
+    background: #4CAAB3;
+    width: 150px;
+    height: 150px;
+    border: 50px solid #222730;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
+    background: #393E46;
+    border-radius: 100%;
+  }
+</style>
+
+-->
