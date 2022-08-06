@@ -1,0 +1,62 @@
+<div class="fork">
+  <div class="spikes">
+    <div class="up"></div>
+    <div class="down"></div>
+    <div class="up"></div>
+    <div class="down"></div>
+    <div class="up"></div>
+    <div class="down"></div>
+    <div class="up"></div>
+  </div>
+  <div class="body"></div>
+  <div class="bottom"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #6592cf;
+  }
+  .fork {
+    width: 140px;
+    height: 100vh;
+    background: #6592cf;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+  .bottom {
+    width: 20px;
+    height: 50px;
+    background: #060f55;
+    box-shadow: 0 -1px #060f55;
+  }
+  .fork .body {
+    width: 100%;
+    height: 100px;
+    background: #060f55;
+    border-radius: 0 0 100px 100px;
+  }
+  .spikes {
+    display: flex;
+  }
+  .spikes .up {
+    background: #060f55;
+    width: 20px;
+    height: 100px;
+    border-radius: 25px 25px 0 0;
+  }
+  .spikes .down {
+    background: #6592cf;
+    width: 20px;
+    border-radius: 0 0 25px 25px;
+    position: relative;
+    top: 10px;
+  }
+</style>
+
+<!--
+    box-shadow on line 34, to close the gab between the two shapes.
+-->
