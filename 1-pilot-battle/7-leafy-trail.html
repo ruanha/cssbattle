@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="leaf"></div>
+</div>
+
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: #0B2429;
+    }
+    .container {
+        display: flex;
+        justify-content: end;
+        width: 250px;
+    }
+    .leaf {
+        width: 150px;
+        height: 150px;
+        background: #F3AC3C;
+        border-radius: 100px 0;
+        box-shadow: -50px 0 #998235, -100px 0 #1A4341;
+    }
+</style>
+  
+  
+  
+<!--
+1) difference between align-items and align-content?
+Here it seems only align-items have the desired effect (and only with height 100%).
+2) why is height: 100% always needed on the flex container?
+It is needed to make the flex container fill the whole height of the browser window.
+3) why does the below example not work 100%? seems to be a bug in the browser. when using box-shadow with inset it does not cover the div around
+the edges of the box with "shadow".
+-->
+
+<!--div class="leaf"></div>
+
+<style>
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #0B2429;
+}
+.leaf {
+    width: 250px;
+    height: 150px;
+    background: #F3AC3C;
+    border-radius: 100px 0;
+    box-shadow: inset 50px 0 #1A4341, inset 100px 0 #998235;
+}
+</style-->
+  

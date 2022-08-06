@@ -1,0 +1,32 @@
+<div class="flex">
+    <div class="flex container">
+        <div class="slice green"></div>
+        <div class="slice yellow"></div>
+        <div class="slice white"></div>
+    </div>
+</div>
+  
+<style>
+    body {
+        margin: 0;
+        background: #E3516E;
+    }
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .container {
+        width: 200px;
+        height: 200px;
+        background: #E3516E;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .slice {width: 100px;height:100px}
+    .green {background: #51B5A9; border-radius: 100% 0 0 0;}
+    .yellow {background: #FADE8B; border-radius: 0 100% 0 0;}
+    .white {background: #F7F3D7; border-radius: 0 0 0 100%}
+</style>
+  

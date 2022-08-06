@@ -1,0 +1,38 @@
+<div class="box">
+    <div>
+        <div class="shape"></div>
+        <div class="shape drop"></div>
+    </div>
+    <div>
+        <div class="shape circle"></div>
+        <div class="shape"></div>
+    </div>
+</div>
+
+<style>
+    body {
+        margin: 0;
+        background: #0B2429;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .shape {
+        width:120px;
+        height: 120px;
+    }
+    .circle {
+        border-radius: 100%;
+        background: #F3AC3C;
+    }
+    .drop {
+        position: relative;
+        border-radius: 50% 0 50% 50%;
+        box-shadow: 60px -60px #998235;
+        background: #F3AC3C;
+    }
+
+</style>
