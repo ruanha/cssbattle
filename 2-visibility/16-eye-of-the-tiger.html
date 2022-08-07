@@ -1,0 +1,33 @@
+<div class="flex">
+  <div class="outer flex">
+    <div class="inner"></div>
+  </div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #0b2429;
+  }
+  .flex {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #0b2429;
+    border: 45px solid #f3ac3c;
+    outline: 20px solid #0b2429;
+  }
+  .outer {
+    width: 200px;
+    height: 200px;
+    background: #998235;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(45deg);
+  }
+</style>
