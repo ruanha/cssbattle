@@ -1,22 +1,23 @@
-<div class="dark shape"></div>
-<div class="light shape"></div>
-<div class="dark shape"></div>
-<div class="light shape"></div>
-<div class="light shape"></div>
-<div class="dark shape"></div>
-<div class="light shape"></div>
-<div class="dark shape"></div>
-<div class="dark shape"></div>
-<div class="light shape"></div>
-<div class="dark shape"></div>
-<div class="light shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
 
 <style>
   body {
     margin: 0;
-    background: #5c434c;
+    height: 100%;
+    background: #5C434C;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
   }
   .container {
     width: 100px;
@@ -27,11 +28,9 @@
     width: 80px;
     height: 80px;
     border-radius: 100% 0 0 0;
+    background: #F09462;
   }
-  .dark {
-    background: #f09462;
-  }
-  .light {
-    background: #f5d6b4;
+  .shape:nth-of-type(even) {
+    background: #F5D6B4;
   }
 </style>
