@@ -1,0 +1,43 @@
+<div class="circle upper"></div>
+<div class="hole"></div>
+<div class="spacer"></div>
+<div class="hole"></div>
+<div class="circle lower"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #09042a;
+  }
+  .spacer {
+    width: 60px;
+    height: 50px;
+    margin: 0 -10px;
+    background: #e78481;
+  }
+  .hole {
+    width: 60px;
+    height: 60px;
+    border: 10px solid #e78481;
+    background: #09042a;
+    border-radius: 50%;
+  }
+  .circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 10px solid #09042a;
+    background: #f5bb9c;
+  }
+  .upper {
+    transform: translate(0, -53px);
+  }
+  .lower {
+    transform: translate(0, 53px);
+  }
+</style>
