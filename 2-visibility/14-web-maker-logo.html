@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="dark triangle"></div>
+  <div class="triangle"></div>
+
+  <div class="inverted triangle"></div>
+  <div class="inverted dark triangle"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    background: #f2f2b6;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    height: 130px;
+  }
+  .triangle {
+    position: absolute;
+    left: 60px;
+    width: 0px;
+    border-top: 130px solid #ff6d00;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+  }
+  .dark {
+    left: 80px;
+    border-top: 130px solid #fd4602;
+  }
+  .inverted {
+    left: 190px;
+    transform: rotate(180deg);
+  }
+  .inverted.dark {
+    left: 170px;
+  }
+</style>
