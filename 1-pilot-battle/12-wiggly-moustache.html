@@ -1,0 +1,55 @@
+<div class="top container">
+    <div class="tip"></div>
+    <div class="spacer"></div>
+    <div class="half"></div>
+    <div class="spacer"></div>
+    <div class="tip"></div>
+  </div>
+  
+  <div class="bottom container">
+    <div class="inverted half"></div>
+    <div class="spacer"></div>
+    <div class="inverted half"></div>
+  </div>
+  
+  <style>
+    body {
+      margin: 0;
+      height: 100%;
+      background: #F5D6B4;
+    }
+    .container {
+      display: flex;
+      height: 50%;
+      width: 100%;
+    }
+    .top {
+      justify-content: space-evenly;
+      align-items: end;
+    }
+    .bottom {
+      justify-content: space-evenly;
+    }
+    .half {
+      width: 60px;
+      height: 30px;
+      background: #F5D6B4;
+      border-radius: 100rem 100rem 0 0;
+      border: 20px solid #D86F45;
+      border-bottom: none;
+    }
+    .inverted {
+      transform: rotate(180deg);
+    }
+    .spacer {
+      margin: 0 -40px;
+    }
+    .tip {
+      width: 20px;
+      height: 20px;
+      background: #D86F45;
+      border-radius: 50%;
+      margin-bottom: -10px;
+    }
+  </style>
+  
