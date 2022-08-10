@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="eyes-container">
+    <div class="eye"></div>
+    <div class="eye"></div>
+  </div>
+  <div class="smile-container">
+    <div class="smile"></div>
+  </div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    background: #6592cf;
+    display: flex;
+    height: 100%;
+  }
+  .container {
+    margin: auto;
+    width: 320px;
+    height: 220px;
+  }
+  .eyes-container,
+  .smile-container {
+    height: 50%;
+  }
+  .eyes-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .eye,
+  .smile {
+    height: 40px;
+    width: 80px;
+    border: 20px solid #060f55;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    border-bottom: none;
+  }
+  .smile-container {
+    display: flex;
+    justify-content: center;
+  }
+  .smile {
+    align-self: end;
+    transform: rotate(180deg);
+  }
+</style>
