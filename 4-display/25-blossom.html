@@ -1,0 +1,46 @@
+<!--
+    Notes: if we use percentages for the border-radius we can't get quite the correct shape (99.9% solution score).
+    Has to be in pixels. why? what's the difference?
+-->
+
+<div class="container">
+  <div class="large leaf"></div>
+  <div class="small leaf"></div>
+  <div class="small leaf"></div>
+  <div class="large leaf"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    background: #998235;
+  }
+  .container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+  }
+  .leaf {
+    border-radius: 0 50px 0 50px;
+    margin: 10px;
+  }
+  .large {
+    width: 80px;
+    height: 100px;
+    background: #1a4341;
+  }
+  .small {
+    width: 80px;
+    height: 60px;
+    background: #f3ac3c;
+    border-radius: 0 50px 0 50px;
+  }
+  .leaf:nth-child(3),
+  .leaf:nth-child(4) {
+    transform: rotateY(180deg);
+  }
+</style>
