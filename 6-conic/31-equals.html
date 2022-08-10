@@ -1,0 +1,32 @@
+<div class="container">
+  <div></div>
+  <div></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #aa445f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    gap: 50px;
+  }
+  .container div {
+    width: 100px;
+    height: 200px;
+    border-radius: 100px 0 0 100px;
+  }
+  .container div:nth-child(1) {
+    background: #f7ec7d;
+  }
+  .container div:nth-child(2) {
+    background: #e38f66;
+
+    transform: rotateY(180deg);
+  }
+</style>
