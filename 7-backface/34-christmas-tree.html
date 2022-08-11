@@ -1,0 +1,45 @@
+<!--
+    First solution used flex-direction: column; but then the selector .triangle:nth-child(1) would refer
+    to the third triangle in the html. Which would be confusing. So used z-index to push the lower triangles
+    to the back.
+-->
+<div class="container">
+  <div class="triangle"></div>
+  <div class="triangle"></div>
+  <div class="triangle"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    background: #007065;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .container {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .triangle {
+    position: relative;
+    height: 0;
+    width: 0;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    margin-bottom: -50px;
+  }
+  .triangle:nth-child(1) {
+    border-bottom: 100px solid #ffeecf;
+  }
+  .triangle:nth-child(2) {
+    border-bottom: 100px solid #f5c181;
+    z-index: -1;
+  }
+  .triangle:nth-child(3) {
+    border-bottom: 100px solid #00a79d;
+    z-index: -2;
+  }
+</style>
