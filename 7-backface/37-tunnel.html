@@ -1,0 +1,40 @@
+<div class="outer">
+  <div class="middle">
+    <div class="inner"></div>
+  </div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6592cf;
+  }
+  .outer {
+    width: 250px;
+    background: #243d83;
+  }
+  .middle {
+    width: 150px;
+    background: #6592cf;
+  }
+  .inner {
+    width: 75px;
+    background: #243d83;
+    transform: rotate(15deg);
+  }
+  .middle,
+  .inner {
+    transform: rotate(15deg);
+  }
+  .outer,
+  .middle,
+  .inner {
+    aspect-ratio: 1;
+    display: flex;
+    margin: auto;
+  }
+</style>
