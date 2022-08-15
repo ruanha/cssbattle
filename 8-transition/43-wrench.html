@@ -1,0 +1,29 @@
+<!--
+    This is a 99.9% match. It does not match in the bottom of the shapes for some reason.
+-->
+
+<div></div>
+<div></div>
+
+<style>
+  body {
+    background: #6592CF;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div {
+    width: 40px;
+    height: 180px;
+    background: #6592CF;
+    border-radius: 0 70px 70px 0;
+    border: 30px solid #243D83;
+    border-left: 0;
+    margin: -15px;
+  }
+  div:nth-child(2) {
+    transform: scaleX(-1);
+  }
+</style>
