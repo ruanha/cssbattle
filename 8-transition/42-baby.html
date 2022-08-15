@@ -1,0 +1,80 @@
+<div class="head">
+  <div class="hair"></div>
+  <div class="eye"></div>
+  <div class="mouth"></div>
+  <div class="frame"></div>
+</div>
+
+<style>
+  body {
+    background: #293462;
+    display: flex;
+    margin: 0;
+    height: 100%;
+  }
+  .head {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background: #fe5f55;
+    border-radius: 50% 50% 25% 25%;
+    display: flex;
+    justify-content: center;
+  }
+  .hair::before {
+    content: "";
+    position: absolute;
+    background: #fff1c1;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    top: 0;
+    left: 100;
+  }
+  .hair::after {
+    content: "";
+    position: absolute;
+    background: #fff1c1;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    top: 0;
+  }
+  .eye::before {
+    content: "";
+    position: absolute;
+    background: #fff1c1;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top: 140px;
+    right: 220px;
+  }
+  .eye::after {
+    content: "";
+    position: absolute;
+    background: #fff1c1;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top: 140px;
+    right: 120px;
+  }
+  .mouth {
+    height: 10px;
+    width: 40px;
+    border-radius: 100vw;
+    position: absolute;
+    background: #fff1c1;
+    bottom: 70px;
+  }
+  .frame {
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    position: absolute;
+    bottom: 50px;
+    border-radius: 50% 50% 25% 25%;
+    outline: 70px solid #293462;
+  }
+</style>
