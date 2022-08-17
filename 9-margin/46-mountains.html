@@ -1,0 +1,41 @@
+
+</div><div class="frame">
+  <div class="small mountain"></div>
+  <div class="large mountain"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF1C1;
+  }
+  .mountain {
+    transform: rotate(45deg);
+    background: #FE5F55;
+    position: absolute;
+    z-index: -1;
+  }
+  .small {
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    left: 5px;
+  }
+  .large {
+    width: 120px;
+    height: 180px;
+    left: 60px;
+    top: 75px;
+  }
+  .frame {
+    background: transparent;
+    outline: 150px solid #293462;
+    border-radius: 50%;
+    width: 200px;
+    aspect-ratio: 1;
+    position: relative;
+  }
+</style>
