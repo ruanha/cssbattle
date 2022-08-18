@@ -1,0 +1,95 @@
+<div class="head">
+  <div class="tip"></div>
+
+  <div class="drops">
+    <div class="drop"></div>
+    <div class="drop"></div>
+  </div>
+</div>
+
+<div class="neck-top"></div>
+
+<div class="neck-bottom"></div>
+
+<div class="body">
+  <div class="dark"></div>
+  <div class="light"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1a4341;
+  }
+  .head {
+    width: 150px;
+    height: 20px;
+    background: #f3ac3c;
+    border-radius: 20px;
+    transform: translate(25px);
+    position: relative;
+  }
+  .tip {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background: #f3ac3c;
+    top: 10px;
+    right: 0;
+    border-radius: 0 0 20px 20px;
+  }
+  .neck-top {
+    width: 20px;
+    height: 20px;
+    background: #f3ac3c;
+  }
+  .neck-bottom {
+    width: 50px;
+    height: 20px;
+    background: #f3ac3c;
+    border-radius: 10px 10px 0 0;
+  }
+  .body {
+    width: 100px;
+    height: 140px;
+    background: linear-gradient(#f3ac3c 40%, #998235 0);
+    border-radius: 20px;
+    position: relative;
+  }
+  .body .dark {
+    width: 50px;
+    height: 50px;
+    background: #998235;
+    position: absolute;
+    border-radius: 50% 50% 0 0;
+    top: 30px;
+  }
+  .body .light {
+    width: 50px;
+    height: 50px;
+    background: #f3ac3c;
+    position: absolute;
+    border-radius: 0 0 50% 50%;
+    top: 30px;
+    right: 0;
+  }
+  .drops {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .drop {
+    width: 20px;
+    height: 20px;
+    background: #998235;
+    border-radius: 50%;
+  }
+</style>
