@@ -1,0 +1,65 @@
+<div class="left strap"></div>
+
+<div class="mask">
+  <div class="stripe"></div>
+  <div class="stripe"></div>
+  <div class="circle"></div>
+</div>
+
+<div class="right strap"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #293462;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .strap {
+    width: 50px;
+    height: 40px;
+    background: #293462;
+    border: 10px solid #fff1c1;
+    border-radius: 50px 0 0 50px;
+    position: relative;
+    margin: -10px;
+    top: -20px;
+  }
+  .right {
+    transform: rotate(180deg);
+  }
+  .mask {
+    width: 150px;
+    height: 100px;
+    background: #fff1c1;
+    border-radius: 0 0 50px 50px;
+  }
+  .stripe {
+    width: 40px;
+    height: 10px;
+    border-radius: 50px;
+    background: #fe5f55;
+    position: relative;
+  }
+  .stripe:nth-child(1) {
+    content: "";
+    top: 20px;
+    left: 20px;
+  }
+  .stripe:nth-child(2) {
+    content: "";
+    top: 30px;
+    left: 20px;
+  }
+  .mask .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fe5f55;
+    position: relative;
+    top: 20px;
+    left: 90px;
+  }
+</style>
