@@ -1,0 +1,32 @@
+<div class="circle"></div>
+<div class="rectangle"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #19191a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle {
+    background: #4f77ff;
+    border: 75px solid #4f77ff;
+    border-radius: 50%;
+    border-left-color: #9ad5ff;
+    position: relative;
+    top: -25px;
+    transform: rotate(-45deg);
+  }
+  .rectangle {
+    content: "";
+    width: 75px;
+    height: 125px;
+    background: #f9e492;
+    position: absolute;
+    top: 125px;
+    left: 125px;
+    z-index: -1;
+  }
+</style>
