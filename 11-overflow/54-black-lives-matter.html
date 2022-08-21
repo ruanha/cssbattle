@@ -1,0 +1,67 @@
+<div class="fingers">
+  <div class="thumb finger"></div>
+  <div class="index finger"></div>
+  <div class="middle finger"></div>
+  <div class="ring finger"></div>
+  <div class="pinky finger"></div>
+</div>
+<div class="bulk"></div>
+<div class="wrist"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #f9e492;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fingers {
+    margin-left: 5px;
+    display: flex;
+    position: relative;
+    gap: 5px;
+  }
+  .finger {
+    width: 20px;
+    height: 50px;
+    background: #191919;
+    border-radius: 25px;
+  }
+  .thumb {
+    height: 65px;
+    position: absolute;
+    border: 5px solid #f9e492;
+    transform: rotate(60deg);
+    top: 26px;
+    left: -3px;
+    z-index: 1;
+  }
+  .index {
+    height: 45px;
+    transform: translateY(10px);
+  }
+  .ring {
+    height: 45px;
+    transform: translateY(10px);
+  }
+  .pinky {
+    height: 35px;
+    transform: translateY(20px);
+  }
+  .bulk {
+    width: 100px;
+    height: 40px;
+    background: #191919;
+    margin-top: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+  .wrist {
+    width: 50px;
+    height: 45px;
+    background: #191919;
+    border-radius: 0 0 10px 10px;
+  }
+</style>
