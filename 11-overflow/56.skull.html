@@ -1,0 +1,71 @@
+<div class="skull">
+  <div class="eye"></div>
+  <div class="eye"></div>
+  <div class="nose"></div>
+</div>
+<div class="jaw">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+  }
+  .skull {
+    width: 120px;
+    height: 100px;
+    border-radius: 75px 75px 15px 15px;
+    background: #4f77ff;
+    position: relative;
+  }
+  .jaw {
+    width: 80px;
+    height: 30px;
+    border-radius: 0 0 20px 20px;
+    background: #4f77ff;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 5px;
+  }
+  .jaw div {
+    width: 10px;
+    height: 10px;
+    background: #191919;
+    border-radius: 50% 50% 0 0;
+  }
+  .eye {
+    width: 40px;
+    height: 40px;
+    background: #191919;
+    border-radius: 50%;
+  }
+  .eye:nth-child(1) {
+    position: absolute;
+    top: 53px;
+    left: 15px;
+  }
+  .eye:nth-child(2) {
+    position: absolute;
+    top: 53px;
+    left: 65px;
+  }
+  .nose {
+    width: 20px;
+    height: 20px;
+    background: #191919;
+    border-radius: 50%;
+    position: absolute;
+    top: 91px;
+    left: 50px;
+  }
+</style>
+>
