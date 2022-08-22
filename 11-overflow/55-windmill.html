@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="semi-circle"></div>
+  <div class="semi-circle"></div>
+  <div class="semi-circle"></div>
+  <div class="semi-circle"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    background: #191919;
+  }
+  .container {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .semi-circle {
+    height: 100px;
+    width: 100px;
+    background: #f9e492;
+  }
+  .semi-circle:nth-child(1) {
+    clip-path: circle(50% at 50% 100%);
+  }
+  .semi-circle:nth-child(2) {
+    clip-path: circle(50% at 0 50%);
+    background: #4f77ff;
+  }
+  .semi-circle:nth-child(3) {
+    clip-path: circle(50% at 100% 50%);
+    background: #4f77ff;
+  }
+  .semi-circle:nth-child(4) {
+    clip-path: circle(50% at 50% 0);
+  }
+</style>
