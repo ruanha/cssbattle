@@ -1,0 +1,45 @@
+<div class="triangles">
+  <div class="triangle"></div>
+  <div class="triangle"></div>
+</div>
+
+<div class="smile"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #191919;
+  }
+  .triangles {
+    display: flex;
+  }
+  .triangle {
+    width: 100px;
+    height: 50px;
+    background: #4f77ff;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+  }
+  .smile {
+    width: 200px;
+    height: 100px;
+    background: #4f77ff;
+    clip-path: polygon(
+      0 0,
+      25% 50%,
+      50% 0,
+      75% 50%,
+      100% 0,
+      100% 50%,
+      75% 100%,
+      50% 50%,
+      25% 100%,
+      0 50%,
+      0 0
+    );
+  }
+</style>
