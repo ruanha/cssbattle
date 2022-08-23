@@ -1,0 +1,65 @@
+<!--
+  Only 99.7% match. Should be improved.
+-->
+
+<div class="circle"></div>
+
+<div class="grid">
+  <div class="horizontal">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="vertical">
+    <div class="center-line"></div>
+    <div class="curved-lines"></div>
+  </div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+  }
+  .circle {
+    width: 150px;
+    height: 150px;
+    background: #4f77ff;
+    border-radius: 50%;
+  }
+  .grid {
+    position: absolute;
+  }
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .horizontal div {
+    height: 10px;
+    width: 150px;
+    background: #191919;
+  }
+  .center-line {
+    width: 10px;
+    height: 150px;
+    background: #191919;
+    position: absolute;
+    top: -30px;
+    left: 70px;
+  }
+  .curved-lines {
+    width: 70px;
+    height: 140px;
+    position: absolute;
+    background: transparent;
+    border: 10px solid #191919;
+    border-radius: 50%;
+    top: -35px;
+    left: 30px;
+  }
+</style>
