@@ -1,0 +1,74 @@
+<div class="bridge"></div>
+<div class="accomodation"></div>
+<div class="hull"></div>
+<div class="first wave"></div>
+<div class="second wave"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+  }
+  .bridge {
+    width: 30px;
+    height: 20px;
+    margin-bottom: -10px;
+    border: 10px solid #5dbcf9;
+  }
+  .accomodation {
+    width: 80px;
+    height: 50px;
+    border: 10px solid #5dbcf9;
+    border-bottom: none;
+    margin-bottom: -29px;
+  }
+  .hull {
+    width: 155px;
+    height: 67px;
+    background: #5dbcf9;
+    /* 
+                                     4
+                                  /     \
+                                /  12  9   \
+                              /  /  |  |  \  \
+                            /  /    |  |    \  \
+                          /  /      |  |      \  \
+                        3  13       |  |       8   5
+                         \  \       |  |       /  /
+                          2__1     11__10     7__6
+   
+    */ /* 1         2          3    */
+    clip-path: polygon(
+      16% 100%,
+      8.5% 100%,
+      0 67%,
+      /* 4         5          6    */ 50% 0,
+      100% 67%,
+      91.5% 100%,
+      /* 7         8          9    */ 84.5% 100%,
+      92% 71%,
+      53% 20%,
+      /* 10        11        12    */ 53% 100%,
+      47% 100%,
+      47% 20%,
+      /* 13       [1]              */ 9% 71%,
+      16% 100%
+    );
+  }
+  .first.wave {
+    width: 200px;
+    height: 10px;
+    background: #5dbcf9;
+    margin: 10px;
+  }
+  .second.wave {
+    width: 110px;
+    height: 10px;
+    background: #5dbcf9;
+  }
+</style>
