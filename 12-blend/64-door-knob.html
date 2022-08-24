@@ -1,0 +1,51 @@
+<div class="circles">
+  <div class="shine"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #191919;
+    display: flex;
+  }
+  .circles {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background: #e08027;
+    border-radius: 50%;
+    border: 30px solid #824b20;
+    position: relative;
+  }
+  .shine {
+    width: 80px;
+    height: 40px;
+    border: 20px solid #fff58f;
+    border-top: 0;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    position: relative;
+    top: 50px;
+    left: -11px;
+  }
+  .shine:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #fff58f;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    border-radius: 50%;
+  }
+  .shine:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #fff58f;
+    position: absolute;
+    top: -10px;
+    left: 80px;
+    border-radius: 50%;
+  }
+</style>
