@@ -1,0 +1,56 @@
+<div class="frame">
+  <div class="middle"></div>
+  <div class="sun"></div>
+  <div class="front"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #f2ad43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .frame {
+    width: 150px;
+    height: 200px;
+    background: transparent;
+    outline: 200px solid #191919;
+    border-radius: 100px 100px 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  .sun {
+    width: 60px;
+    height: 60px;
+    background: #fff58f;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    z-index: -2;
+  }
+  .middle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #e08027;
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    z-index: -1;
+  }
+  .front {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #824b20;
+    position: absolute;
+    top: 150px;
+    left: 175px;
+    z-index: -1;
+  }
+</style>
