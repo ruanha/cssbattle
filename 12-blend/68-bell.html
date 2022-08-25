@@ -1,0 +1,36 @@
+<div class="circle top"></div>
+<div class="bell"></div>
+<div class="circle bottom"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+  }
+  .top {
+    background: #f2ad43;
+    top: 26px;
+  }
+  .bell {
+    width: 120px;
+    height: 120px;
+    background: #e08027;
+    border-radius: 60px 60px 10px 10px;
+    z-index: 1;
+  }
+  .bottom {
+    background: #824b20;
+    top: -25px;
+  }
+</style>
