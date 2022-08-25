@@ -17,3 +17,4 @@ All contributions are welcome. See also the below list of entries that are curre
 - 58-rose (99.9%)
 - 59-earth (99.7%)
 - 61-improvmx (99.9%)
+- 66-batmicky (99.9%)

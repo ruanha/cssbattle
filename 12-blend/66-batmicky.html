@@ -1,0 +1,80 @@
+<div class="head">
+  <div class="left ear"></div>
+  <div class="right ear"></div>
+</div>
+<div class="body"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+  }
+  .head {
+    width: 20px;
+    height: 20px;
+    background: #f2ad43;
+    border: 30px solid #191919;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: -30px;
+    border-bottom: none;
+    position: relative;
+    z-index: 1;
+  }
+  .ear {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #f2ad43;
+    position: absolute;
+  }
+  .left.ear {
+    left: -5px;
+    top: -5px;
+  }
+  .right.ear {
+    left: 15px;
+    top: -5px;
+  }
+  .body {
+    width: 240px;
+    height: 80px;
+    margin-bottom: 40px;
+    background:
+      /* bottom right*/ radial-gradient(
+        circle at 75% 200%,
+        #191919,
+        #191919 100px,
+        transparent 101px,
+        transparent 100%
+      ),
+      /* top right */
+        radial-gradient(
+          circle at 102% 65%,
+          #191919,
+          #191919 50px,
+          transparent 52px,
+          transparent 100%
+        ),
+      /* bottom left */
+        radial-gradient(
+          circle at 25% 200%,
+          #191919,
+          #191919 100px,
+          transparent 101px,
+          transparent 100%
+        ),
+      /* top left*/
+        radial-gradient(
+          circle at -2% 65%,
+          #191919,
+          #191919 50px,
+          #f2ad43 52px,
+          #f2ad43 100%
+        );
+  }
+</style>
