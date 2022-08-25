@@ -1,14 +1,14 @@
+<!--
+  Previous version used three semi-circle divs with borders for the three sound bars.
+  This uses a repeating radial gradient and a radial gradiant to cover parts of the repeating pattern.
+  It makes it more DRY and removes a lot of code. However the rendering (at least on cssbattle.dev) is a bit clunky.
+-->
+
 <div class="back"></div>
 
 <div class="cone"></div>
 
-<div class="sound-bars">
-  <div>
-    <div>
-      <div></div>
-    </div>
-  </div>
-</div>
+<div class="sound-bars"></div>
 
 <style>
   body {
@@ -35,35 +35,21 @@
     width: 100px;
     height: 200px;
     margin-left: 25px;
-    position: relative;
-  }
-  .sound-bars > div:first-child {
-    width: 90px;
-    height: 180px;
-    border: 10px solid #5dbcf9;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    border-left: 0;
-    position: absolute;
-  }
-  .sound-bars > div > div {
-    width: 65px;
-    height: 130px;
-    border: 10px solid #5dbcf9;
-    border-top-right-radius: 75px;
-    border-bottom-right-radius: 75px;
-    border-left: 0;
-    position: absolute;
-    top: 15px;
-  }
-  .sound-bars > div > div > div {
-    width: 40px;
-    height: 80px;
-    border: 10px solid #5dbcf9;
-    border-top-right-radius: 75px;
-    border-bottom-right-radius: 75px;
-    border-left: 0;
-    position: absolute;
-    top: 15px;
+    background: radial-gradient(
+        circle at 0,
+        #191919,
+        #191919 25px,
+        transparent 25px,
+        transparent 110px,
+        #191919 110px,
+        #191919 100%
+      ),
+      repeating-radial-gradient(
+        circle at 0,
+        #191919,
+        #191919 15px,
+        #5dbcf9 0,
+        #5dbcf9 25px
+      );
   }
 </style>
