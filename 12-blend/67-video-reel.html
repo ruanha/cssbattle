@@ -1,0 +1,52 @@
+<!--
+  Nice usecase for nth-child(even/odd)
+-->
+
+<div class="column">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div class="column">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div class="column">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div class="column">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<style>
+  body {
+    margin: 0 0 0 -105px;
+    height: 100%;
+    display: flex;
+    background: #5dbcf9;
+  }
+  .column {
+    margin-left: 10px;
+    position: relative;
+  }
+  .column:nth-child(even) {
+    margin-top: -80px;
+  }
+  .column:nth-child(odd) {
+    margin-top: -30px;
+  }
+  .column > div {
+    width: 140px;
+    height: 110px;
+    background: #191919;
+    margin-bottom: 40px;
+  }
+</style>
