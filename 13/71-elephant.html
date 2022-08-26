@@ -1,0 +1,96 @@
+<div class="left ear">
+  <div class="inner ear"></div>
+</div>
+
+<div class="face">
+  <div class="eyes">
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="tusk"></div>
+
+  <div class="trunk"></div>
+</div>
+
+<div class="right ear">
+  <div class="inner ear"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #998235;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ear {
+    width: 80px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+  }
+  .left.ear {
+    left: 20px;
+    background: #1a4341;
+    overflow: hidden;
+  }
+  .left.ear > .inner.ear {
+    left: 15px;
+    background: #0b2429;
+  }
+  .face {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #1a4341;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  .right.ear {
+    right: 20px;
+    background: #1a4341;
+    overflow: hidden;
+  }
+  .right.ear > .inner.ear {
+    background: #0b2429;
+    position: relative;
+    right: 15px;
+  }
+  .eyes {
+    display: flex;
+    gap: 20px;
+  }
+  .eyes div {
+    width: 20px;
+    height: 10px;
+    background: #0b2429;
+    border-radius: 0 0 20px 20px;
+    border: 10px solid #998235;
+    border-top: none;
+  }
+  .trunk {
+    width: 40px;
+    height: 150px;
+    border-radius: 100vh;
+    background: #0b2429;
+    position: absolute;
+    left: 180px;
+    top: 180px;
+  }
+  .tusk {
+    width: 80px;
+    height: 40px;
+    border-radius: 60px 60px 0 0;
+    border: 20px solid #fff;
+    border-bottom: none;
+    position: relative;
+    top: 10px;
+  }
+</style>
