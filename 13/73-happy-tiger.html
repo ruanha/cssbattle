@@ -1,0 +1,117 @@
+<div class="ears">
+  <div class="left ear"></div>
+  <div class="right ear"></div>
+</div>
+
+<div class="head">
+  <div class="hair"></div>
+
+  <div class="eyes">
+    <div class="eye"></div>
+    <div class="eye"></div>
+  </div>
+
+  <div class="nose"></div>
+
+  <div class="smile">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f3ac3c;
+  }
+  .hair {
+    width: 35px;
+    height: 35px;
+    border-radius: 50% 0 0 0;
+    transform: rotate(45deg);
+    background: #1a4341;
+    position: absolute;
+    top: -16px;
+  }
+  .head {
+    width: 150px;
+    height: 150px;
+    background: #998235;
+    border-radius: 50% 50% 40% 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .ears {
+    position: absolute;
+    display: flex;
+    gap: 50px;
+  }
+  .ear {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 10px solid #998235;
+    background: #1a4341;
+    z-index: -1;
+    transform: translateY(-55px);
+  }
+  .eyes {
+    display: flex;
+    gap: 60px;
+    transform: translateY(60px);
+  }
+  .eye {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #1a4341;
+  }
+  .nose {
+    width: 100px;
+    height: 40px;
+    border-radius: 20% 20% 30px 30px;
+    transform: translateY(75px);
+    background: #ffffff;
+  }
+  .smile {
+    position: relative;
+    display: flex;
+  }
+  .smile > div:nth-child(2) {
+    width: 10px;
+    height: 30px;
+    background: #1a4341;
+    position: absolute;
+    top: 25px;
+    left: -5px;
+  }
+  .smile > div:nth-child(1) {
+    width: 20px;
+    height: 10px;
+    border-radius: 0 0 30px 30px;
+    border: 10px solid #1a4341;
+    border-top: 0;
+    position: absolute;
+    top: 45px;
+    left: -35px;
+  }
+  .smile > div:nth-child(3) {
+    width: 20px;
+    height: 10px;
+    border-radius: 0 0 30px 30px;
+    border: 10px solid #1a4341;
+    border-top: 0;
+    position: absolute;
+    top: 45px;
+    left: -5px;
+  }
+</style>
