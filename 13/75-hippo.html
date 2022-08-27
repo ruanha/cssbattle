@@ -1,0 +1,88 @@
+<div class="ears">
+  <div></div>
+  <div></div>
+</div>
+
+<div class="face upper">
+  <div class="eye"></div>
+  <div class="eye"></div>
+</div>
+
+<div class="face snout">
+  <div class="nostril"></div>
+  <div class="nostril"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+  }
+  .face {
+    width: 130px;
+    height: 100px;
+    background: #dd6b4d;
+    transform: translateY(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .face.upper {
+    border-radius: 60px 60px 0 0;
+    background: #fe5f55;
+    gap: 60px;
+  }
+  .face.snout {
+    width: 150px;
+    border-radius: 70px 70px 55px 55px;
+    background: #a64942;
+    margin-top: -30px;
+    gap: 60px;
+  }
+  .ears {
+    display: flex;
+    position: absolute;
+    gap: 60px;
+    top: 70px;
+  }
+  .ears > div {
+    width: 10px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    border: 5px solid #fe5f55;
+  }
+  .ears > div:nth-child(1) {
+    transform: rotate(-45deg);
+  }
+  .ears > div:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .eye {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000000;
+    position: relative;
+    top: 5px;
+  }
+  .nostril {
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    background: #000000;
+    position: relative;
+    top: -15px;
+  }
+  .nostril:first-child {
+    transform: rotate(45deg);
+  }
+  .nostril:last-child {
+    transform: rotate(-45deg);
+  }
+</style>
