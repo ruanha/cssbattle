@@ -1,0 +1,50 @@
+<div class="container top">
+  <div></div>
+  <div class="container inner">
+    <div></div>
+  </div>
+</div>
+
+<div class="container bottom">
+  <div class="container inner">
+    <div></div>
+  </div>
+  <div></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #f7f3da;
+  }
+  .container {
+    display: flex;
+  }
+  .container.inner {
+    background: #d25b70;
+  }
+  .container > div {
+    width: 200px;
+    height: 40px;
+    background: #d25b70;
+  }
+  .container.top > div:nth-child(1) {
+    border-radius: 0 10px 0 0;
+  }
+  .container.top .inner > div {
+    border-radius: 0 0 0 20px;
+    background: #f7f3da;
+  }
+  .container.bottom > div:nth-child(2) {
+    border-radius: 0 0 0 10px;
+  }
+  .container.bottom .inner > div {
+    border-radius: 0 20px 0 0;
+    background: #f7f3da;
+  }
+</style>
