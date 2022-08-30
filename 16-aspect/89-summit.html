@@ -1,0 +1,37 @@
+<div class="center circle"></div>
+
+<div class="triangle">
+  <div class="dark circle"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #f9e492;
+  }
+  .triangle {
+    width: 280px;
+    height: 140px;
+    background: #4f77ff;
+    position: absolute;
+    bottom: 0px;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    overflow: hidden;
+  }
+  .dark.circle {
+    background: #191919;
+    position: relative;
+    top: -110px;
+    left: 40px;
+  }
+</style>
