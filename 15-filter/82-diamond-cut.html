@@ -1,0 +1,40 @@
+<div class="square">
+  <div class="hole"></div>
+  <div class="hole"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3ac3c;
+  }
+  .square {
+    margin-left: -5px;
+    width: 30px;
+    height: 30px;
+    background: #1a4341;
+    border: 35px solid #f3ac3c;
+    outline: 30px solid #998235;
+    transform: rotate(45deg);
+    position: relative;
+  }
+  .hole {
+    background: #f3ac3c;
+  }
+  .hole:nth-child(1) {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    left: -70px;
+  }
+  .hole:nth-child(2) {
+    width: 30px;
+    height: 70px;
+    position: absolute;
+    top: -70px;
+  }
+</style>
