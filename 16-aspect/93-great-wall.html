@@ -1,0 +1,72 @@
+<div class="circular-frame">
+  <div class="moon"></div>
+
+  <div class="wall">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="wall bend">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="wall">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4f77ff;
+  }
+  .circular-frame {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #191919;
+    position: relative;
+    overflow: hidden;
+  }
+  .moon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f9e492;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+  .wall {
+    position: absolute;
+    top: 122px;
+  }
+  .wall > div {
+    width: 100px;
+    height: 16px;
+    margin-bottom: 10px;
+    background: #f9e492;
+  }
+  .wall:last-child {
+    left: 120px;
+    top: 109px;
+  }
+  .wall.bend {
+    top: 115.5px;
+    left: 100px;
+    transform: skewY(-33deg);
+  }
+  .wall.bend > div {
+    width: 20px;
+    background: #d6b73f;
+  }
+</style>
