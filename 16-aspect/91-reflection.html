@@ -1,0 +1,29 @@
+<div class="sun"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(#d25b70, #d25b70 50%, #6cb3a9 50%, #6cb3a9);
+  }
+  .sun {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(
+        to top,
+        transparent 50%,
+        #f6df96 50%,
+        #f6df96 100%
+      ),
+      repeating-linear-gradient(
+        360deg,
+        #f6df96,
+        #f6df96 10px,
+        #6cb3a9 10px,
+        #6cb3a9 25px
+      );
+  }
+</style>
