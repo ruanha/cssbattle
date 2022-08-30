@@ -1,0 +1,55 @@
+<div class="circle"></div>
+
+<div class="between">
+  <div class="stick down"></div>
+  <div class="block"></div>
+  <div class="stick up"></div>
+</div>
+
+<div class="circle"></div>
+
+<div class="between">
+  <div class="stick down"></div>
+  <div class="block"></div>
+  <div class="stick up"></div>
+</div>
+
+<div class="circle"></div>
+
+<style>
+  body {
+    margin: 0 -200px 0 -200px;
+    height: 100%;
+    background: #6592cf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #243d83;
+    position: relative;
+  }
+  .between {
+    margin: 0 -7px 0 -7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .stick {
+    height: 50px;
+    width: 30px;
+    border-radius: 100vh;
+    background: #6592cf;
+    margin: -10px;
+    z-index: 1;
+  }
+  .block {
+    width: 40px;
+    height: 40px;
+    background: #243d83;
+  }
+</style>
