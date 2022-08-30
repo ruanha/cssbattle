@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="big block"></div>
+  <div class="small block"></div>
+</div>
+
+<div class="container">
+  <div class="small block"></div>
+  <div class="big block"></div>
+</div>
+
+<div class="center">
+  <div></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #f3ac3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .center {
+    width: 70px;
+    height: 70px;
+    border-radius: 0 15px 0 15px;
+    background: #1a4341;
+    position: relative;
+  }
+  .center > div {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background: #f3ac3c;
+  }
+  .container {
+    position: absolute;
+    display: flex;
+  }
+  .block {
+    background: #1a4341;
+  }
+  .small.block {
+    width: 50px;
+    height: 50px;
+  }
+  .big.block {
+    width: 100px;
+    height: 100px;
+  }
+  .container:nth-child(1) {
+    top: 65px;
+    left: 65px;
+  }
+  .container:nth-child(2) {
+    top: 135px;
+    right: 65px;
+  }
+  .big.block:nth-child(1) {
+    border-radius: 10px 0 10px 10px;
+  }
+  .small.block:nth-child(2) {
+    border-radius: 0 10px 10px 0;
+  }
+  .small.block:nth-child(1) {
+    align-self: end;
+    border-radius: 10px 0 0 10px;
+  }
+  .big.block:nth-child(2) {
+    border-radius: 10px 10px 10px 0;
+  }
+</style>
