@@ -1,0 +1,44 @@
+<div class="pill"></div>
+<div class="pill"></div>
+
+<div class="square">
+  <div class="circle"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #243d83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pill {
+    width: 220px;
+    height: 100px;
+    background: #6592cf;
+    border-radius: 100vh;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  .pill:nth-child(2) {
+    transform: rotate(135deg);
+  }
+  .square {
+    width: 120px;
+    height: 120px;
+    background: #243d83;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .circle {
+    width: 60px;
+    height: 60px;
+    background: #eeb850;
+    border-radius: 50%;
+  }
+</style>
