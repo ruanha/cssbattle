@@ -1,0 +1,45 @@
+<div class="keyboard">
+  <div class="key white"><div class="black"></div></div>
+  <div class="key white"><div class="black"></div></div>
+  <div class="key white"></div>
+  <div class="key white"><div class="black"></div></div>
+  <div class="key white"><div class="black"></div></div>
+  <div class="key white"><div class="black"></div></div>
+  <div class="key white"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #998235;
+  }
+  .keyboard {
+    width: 170px;
+    height: 90px;
+    padding: 5px;
+    background: #191919;
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+    gap: 5px;
+  }
+  .white {
+    width: 20px;
+    height: 70px;
+    border-radius: 5px;
+    background: #ffffff;
+    position: relative;
+  }
+  .black {
+    width: 15px;
+    height: 35px;
+    position: absolute;
+    background: #191919;
+    right: -10px;
+    z-index: 1;
+  }
+</style>
