@@ -1,0 +1,98 @@
+<div class="top-hair container">
+  <div class="top side hair"></div>
+  <div class="middle hair"></div>
+  <div class="top side hair"></div>
+</div>
+
+<div class="container">
+  <div class="left side hair"></div>
+
+  <div class="face">
+    <div class="mouth"></div>
+  </div>
+
+  <div class="right side hair"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #161616;
+  }
+  .container {
+    display: flex;
+    position: relative;
+    top: 6px;
+  }
+  .face {
+    width: 80px;
+    height: 60px;
+    position: relative;
+    border-radius: 0 0 100vh 100vh;
+    background: linear-gradient(90deg, #fff, #ffffff 50%, #ffdeb9 50%, #ffdeb9);
+  }
+  .mouth {
+    width: 20px;
+    height: 10px;
+    border-radius: 0 0 30px 30px;
+    background: #161616;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 40px;
+  }
+
+  .hair {
+    background: #ebae11;
+    position: relative;
+  }
+  .side.hair {
+    width: 60px;
+    height: 30px;
+    border-radius: 0 0 30px 30px;
+    z-index: -1;
+  }
+  .left.side.hair {
+    transform: rotate(15deg);
+    left: 37px;
+    top: 4px;
+  }
+  .right.side.hair {
+    transform: rotate(-15deg);
+    right: 37px;
+    top: 4px;
+  }
+  .top-hair {
+    position: relative;
+    align-items: flex-end;
+  }
+  .top-hair > .side {
+    width: 60px;
+    height: 30px;
+    border-radius: 0 0 30px 30px;
+    top: 9px;
+  }
+  .top.side.hair:nth-child(1) {
+    transform: rotate(60deg);
+    z-index: 1;
+    left: 22px;
+  }
+  .middle.hair {
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    position: relative;
+    border-radius: 95% 0;
+    transform: rotate(-45deg);
+    margin: 0 -10px 0 -10px;
+  }
+  .top.side.hair:nth-child(3) {
+    transform: rotate(-60deg);
+    z-index: 1;
+    left: -22px;
+  }
+</style>
