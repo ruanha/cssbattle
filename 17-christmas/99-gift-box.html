@@ -1,0 +1,51 @@
+<div class="ribbon">
+  <div></div>
+  <div></div>
+</div>
+
+<div class="box">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #ac474b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ribbon {
+    height: 60px;
+    display: flex;
+  }
+  .ribbon > div {
+    width: 20px;
+    height: 20px;
+    border: 10px solid #fff;
+    margin: 0 -5px 0 -5px;
+  }
+  .ribbon > div:first-child {
+    border-radius: 50% 50% 0 50%;
+  }
+  .ribbon > div:last-child {
+    border-radius: 50% 50% 50% 0;
+  }
+  .box {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .box > div {
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+  }
+</style>
