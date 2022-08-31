@@ -1,0 +1,102 @@
+<div class="appendix"></div>
+
+<div class="clamp container">
+  <div class="block container">
+    <div class="swords container">
+      <div class="sword container left">
+        <div class="blade"></div>
+        <div class="shaft"></div>
+        <div class="handle"></div>
+      </div>
+
+      <div class="sword container right">
+        <div class="blade point"></div>
+        <div class="shaft"></div>
+        <div class="handle"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="appendix last"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    background: #14313e;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .clamp {
+    width: 274px;
+    height: 150px;
+    background: #ffdf00;
+    border-radius: 20px;
+  }
+  .block {
+    width: 224px;
+    height: 100px;
+    background: #14313e;
+    border-radius: 6.9%;
+  }
+  .appendix {
+    height: 40px;
+    width: 10px;
+    border-radius: 5px 0 0 5px;
+    background: #ffdf00;
+  }
+  .appendix.last {
+    border-radius: 0 5px 5px 0;
+  }
+  .swords {
+    width: 194px;
+    height: 200px;
+    background: #14313e;
+  }
+  .sword.container {
+    flex-direction: column;
+    position: relative;
+    margin: 0 -39px 0 -39px;
+    top: -5px;
+  }
+  .sword.container.left {
+    transform: rotate(45deg);
+  }
+  .sword.container.right {
+    transform: rotate(-45deg);
+  }
+  .blade {
+    height: 150px;
+    width: 30px;
+    background: #ffdf00;
+    clip-path: polygon(50% 0%, 0 10%, 0 100%, 100% 100%, 100% 10%, 50% 0);
+  }
+  .sword.left > .blade {
+    background: linear-gradient(
+      #ffdf00,
+      #ffdf00 80px,
+      #14313e 80px,
+      #14313e 130px,
+      #ffdf00 130px
+    );
+  }
+  .shaft {
+    width: 80px;
+    height: 20px;
+    background: #ffdf00;
+    margin: -1px;
+  }
+  .handle {
+    width: 20px;
+    height: 40px;
+    background: #ffdf00;
+    border-radius: 0 0 8px 8px;
+  }
+</style>
