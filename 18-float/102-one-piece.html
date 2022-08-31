@@ -1,0 +1,126 @@
+<div class="container">
+  <div class="top bones">
+    <div class="bone">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="bone">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="skull">
+    <div class="eye-socket left"></div>
+    <div class="eye-socket right"></div>
+  </div>
+
+  <div class="teeth">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="bottom bones">
+    <div class="bone">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="bone">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    position: relative;
+    top: 10px;
+  }
+  .skull {
+    width: 150px;
+    height: 100px;
+    background: #fff;
+    border-radius: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    border: 10px solid #000;
+  }
+  .eye-socket {
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+  }
+  .left.eye-socket {
+    transform: rotate(-30deg);
+  }
+  .right.eye-socket {
+    transform: rotate(30deg);
+  }
+
+  .bones {
+    display: flex;
+    justify-content: space-between;
+  }
+  .top.bones > .bone:first-child {
+    transform: rotate(-45deg) translateX(3.5px);
+  }
+  .top.bones > .bone:last-child {
+    transform: rotate(45deg) translateX(10.5px);
+  }
+  .bottom.bones > .bone:first-child {
+    transform: rotate(225deg) translateX(10.5px);
+  }
+  .bottom.bones > .bone:last-child {
+    transform: rotate(135deg) translateX(3.5px);
+  }
+  .bone {
+    position: relative;
+  }
+  .bone > div {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .bone > div:nth-child(1) {
+    transform: translateX(-27px) translateY(-13px);
+  }
+  .bone > div:nth-child(2) {
+    transform: translateX(-12px) translateY(-13px);
+  }
+  .bone > div:nth-child(3) {
+    transform: translateX(-17px) translateY(0px);
+    width: 20px;
+    border-radius: 0;
+  }
+
+  .teeth {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    left: 58px;
+  }
+  .teeth > div {
+    height: 20px;
+    width: 15px;
+    background: #fff;
+  }
+</style>
