@@ -1,0 +1,83 @@
+<div class="wings">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div class="eye"></div>
+
+<div class="beak"></div>
+
+<div class="connection"></div>
+
+<div class="stick"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    background: #161616;
+  }
+  .eye {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    border-radius: 50%;
+    background: #161616;
+    box-shadow: 0 0 0 5px #a22015, 0 0 0 15px #fff, 0 0 0 20px #a22015;
+    z-index: 1;
+  }
+  .wings {
+    width: 55px;
+    height: 36px;
+    position: absolute;
+    left: 130px;
+    top: 132px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .wings > div {
+    height: 15px;
+    background: #fff;
+    border-radius: 0 0 0 12px;
+  }
+  .wings > div:nth-child(1) {
+    width: 55px;
+  }
+  .wings > div:nth-child(2) {
+    width: 40px;
+  }
+  .wings > div:nth-child(3) {
+    width: 25px;
+  }
+  .beak {
+    width: 60px;
+    height: 40px;
+    background: #e96a23;
+    border-radius: 0 80px 10px 0;
+    position: absolute;
+    right: 120px;
+    top: 129px;
+  }
+  .connection {
+    width: 30px;
+    height: 30px;
+    background: #a22015;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    left: 185px;
+    top: 173px;
+  }
+  .stick {
+    width: 20px;
+    height: 100px;
+    background: #e96a23;
+    position: absolute;
+    left: 190;
+    top: 200px;
+    z-index: -1;
+  }
+</style>
