@@ -1,0 +1,73 @@
+<div class="hair"></div>
+
+<div class="eyes">
+  <div class="eye left">
+    <div class="ball">
+      <div class="iris"></div>
+    </div>
+  </div>
+  <div class="eye right">
+    <div class="ball">
+      <div class="iris"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #bac7ce;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hair {
+    width: 130px;
+    height: 130px;
+    background: #475862;
+    transform: translateY(-65px) rotate(45deg);
+  }
+  .eyes {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+  .eye {
+    width: 120px;
+    height: 120px;
+    background: #000000;
+    border-radius: 50% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .eye:first-child {
+    transform: rotate(75deg);
+  }
+  .eye:last-child {
+    transform: rotate(15deg);
+  }
+  .eye .ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #868a64;
+    box-shadow: inset 10.5px 10.5px #5a6042;
+    display: flex;
+  }
+  .eye.left > .ball {
+    transform: rotate(-30deg);
+  }
+  .eye.right > .ball {
+    transform: rotate(30deg);
+  }
+  .iris {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    border: 5px solid #000;
+    border-radius: 50%;
+    background: #4e2b24;
+  }
+</style>
