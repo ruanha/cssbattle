@@ -1,0 +1,79 @@
+<div class="frame">
+  <div>
+    <div>
+      <div class="outer ring">
+        <div class="inner ring">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    background: #000;
+  }
+  .frame {
+    margin: auto;
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(
+      105deg,
+      #e96a23,
+      #e96a23 120px,
+      #ebae11 121px,
+      #ebae11 170px,
+      #e96a23 171px,
+      #e96a23 185px,
+      #ebae11 186px,
+      #ebae11 210px,
+      #e96a23 211px
+    );
+    display: flex;
+  }
+  .frame > div {
+    width: 270px;
+    height: 90px;
+    background: #000;
+    margin: auto;
+    border-radius: 12.5px;
+  }
+  .frame > div > div {
+    margin: auto;
+    width: 240px;
+    height: 120px;
+    background: #000;
+    border-radius: 12.5px;
+    position: relative;
+    bottom: 15px;
+    display: flex;
+  }
+  .ring {
+    margin: auto;
+    background: #000;
+    border: 5px solid #ebae11;
+    border-radius: 50%;
+  }
+  .outer.ring {
+    width: 200px;
+    height: 80px;
+    display: flex;
+  }
+  .inner.ring {
+    margin: auto;
+    width: 120px;
+    height: 60px;
+    display: flex;
+  }
+  .circle {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ebae11;
+  }
+</style>
