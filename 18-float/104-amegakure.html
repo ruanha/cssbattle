@@ -1,0 +1,89 @@
+<div class="frame">
+  <div class="plate">
+    <div class="screws">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="holes">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="screws">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #000;
+    display: flex;
+  }
+  .frame {
+    width: 240px;
+    height: 120px;
+    background: #37385a;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+  }
+  .plate {
+    height: 80px;
+    width: 200px;
+    margin: auto;
+    background: linear-gradient(
+      105deg,
+      #9897ae,
+      #9897ae 38%,
+      #c0c3db 39%,
+      #c0c3db 61%,
+      #9897ae 62%,
+      #9897ae
+    );
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+  }
+  /* Solution using radial-gradient
+  .screws {
+    background: radial-gradient(
+      circle at center, #000, #000 5px,
+      transparent 5px, transparent);
+    background-size: 10px 20px;
+    background-position: 0 -5px;
+    background-repeat: repeat-y;
+    width: 10px;
+    height: 50px;
+  }
+  */
+  .screws {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .screws > div {
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+  }
+  .holes {
+    display: flex;
+    gap: 10px;
+  }
+  .holes > div {
+    height: 50px;
+    width: 10px;
+    background: #000;
+    border-radius: 100vh;
+  }
+</style>
