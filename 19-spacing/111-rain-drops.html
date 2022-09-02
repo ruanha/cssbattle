@@ -1,0 +1,32 @@
+<div class="drop"></div>
+<div>
+  <div class="drop"></div>
+  <div class="drop"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #f3ac3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .drop {
+    width: 80px;
+    height: 80px;
+    background: #254241;
+    border-radius: 50% 0 50% 50%;
+    position: relative;
+  }
+  .drop:nth-child(1) {
+    transform: translateX(-40px) rotate(45deg);
+  }
+  div > .drop:nth-child(1) {
+    transform: translateX(-40px) translateY(-30px) rotate(135deg);
+  }
+  div > .drop:nth-child(2) {
+    transform: translateX(-40px) translateY(30px) rotate(-45deg);
+  }
+</style>
