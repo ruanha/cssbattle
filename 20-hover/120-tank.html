@@ -1,0 +1,79 @@
+<div class="container column col_1">
+  <div class="small block"></div>
+  <div class="small block"></div>
+  <div class="long block"></div>
+  <div class="tank container">
+    <div class="tank"></div>
+    <div class="shot"></div>
+    <div class="shot"></div>
+  </div>
+</div>
+
+<div class="container column col_2">
+  <div class="tall block"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    padding: 40px;
+    height: 180px;
+    border: 20px solid #54c144;
+    background: #000;
+    display: flex;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .block {
+    background: #c74e4e;
+  }
+  .small.block {
+    width: 80px;
+    height: 40px;
+  }
+  .long.block {
+    width: 200px;
+    height: 40px;
+  }
+  .tall.block {
+    width: 40px;
+    height: 180px;
+  }
+  .tank.container {
+    margin-top: -20px;
+    align-items: center;
+    gap: 10px;
+  }
+  .tank.container > .tank {
+    width: 50px;
+    height: 40px;
+    background: #54c144;
+    clip-path: polygon(
+      0 0,
+      /*top corner*/ 0 10px,
+      10px 10px,
+      10px 30px,
+      0 30px,
+      /*bottom foot start*/ 0 40px,
+      40px 40px,
+      40px 30px,
+      30px 30px,
+      /* bottom foot end */ 30px 25px,
+      /*cannon start*/ 50px 25px,
+      50px 15px,
+      30px 15px,
+      /*cannon end*/ 30px 10px,
+      40px 10px,
+      40px 0px,
+      50px 0
+    );
+  }
+  .shot {
+    height: 10px;
+    width: 10px;
+    background: #fff;
+  }
+</style>
