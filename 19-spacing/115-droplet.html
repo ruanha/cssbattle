@@ -1,0 +1,37 @@
+<div class="top cover"></div>
+
+<div class="center"></div>
+
+<div class="bottom cover"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(#c36271, #c36271 50%, #f2e09f 50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .center {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(#c36271, #c36271 50%, #f2e09f 50%);
+    align-self: center;
+  }
+  .cover {
+    width: 380px;
+    height: 50%;
+  }
+  .top {
+    border-radius: 0 0 100px 0;
+    background: #f2e09f;
+  }
+  .bottom {
+    align-self: flex-end;
+    border-radius: 100px 0 0 0;
+    background: #c36271;
+  }
+</style>
