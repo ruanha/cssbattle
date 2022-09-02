@@ -1,0 +1,41 @@
+<div class="band"></div>
+
+<div class="ear-pieces">
+  <div></div>
+  <div></div>
+</div>
+
+<style>
+  body {
+    margin: -5px 0 0 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #293d7e;
+  }
+  .band {
+    width: 130px;
+    height: 100px;
+    background: #293d7e;
+    border: 20px solid #6e91ca;
+    border-radius: 100px 100px 0 0;
+    border-bottom: 0;
+  }
+  .ear-pieces {
+    display: flex;
+    gap: 50px;
+  }
+  .ear-pieces > div {
+    width: 60px;
+    height: 80px;
+    background: #6e91ca;
+  }
+  .ear-pieces > div:nth-child(1) {
+    border-radius: 0 20px 30px 30px;
+  }
+  .ear-pieces > div:nth-child(2) {
+    border-radius: 20px 0 30px 30px;
+  }
+</style>
