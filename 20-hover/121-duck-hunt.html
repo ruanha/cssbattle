@@ -1,0 +1,65 @@
+<div class="tree">
+  <div class="crown">
+    <div class="leafs"></div>
+    <div class="leafs"></div>
+    <div class="leafs"></div>
+    <div class="leafs"></div>
+  </div>
+  <div class="trunk"></div>
+</div>
+
+<div class="bush">
+  <div class="leafs"></div>
+  <div class="leafs"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(
+      #1e92ff,
+      #1e92ff 60%,
+      #69d10a 60%,
+      #69d10a 73.5%,
+      #6f6100 73%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 240px;
+  }
+  .leafs {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #69d10a;
+  }
+  .crown {
+    position: relative;
+  }
+  .crown > .leafs {
+    position: absolute;
+    left: -10px;
+    top: -38px;
+    z-index: 1;
+  }
+  .crown > .leafs:nth-child(1) {
+    left: -30px;
+  }
+  .crown > .leafs:nth-child(2) {
+    top: -58px;
+  }
+  .crown > .leafs:nth-child(3) {
+    left: 10px;
+  }
+  .trunk {
+    width: 20px;
+    height: 65px;
+    background: #441a0a;
+    transform: translateY(-3px);
+  }
+  .bush > .leafs:nth-child(1) {
+    transform: translateY(20px);
+  }
+</style>
