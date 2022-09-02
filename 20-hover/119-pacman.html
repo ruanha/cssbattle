@@ -1,0 +1,55 @@
+<div class="pacman"></div>
+
+<div class="container">
+  <div class="cheese"></div>
+  <div class="cheese"></div>
+  <div class="cheese"></div>
+</div>
+
+<div class="ghost"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    background: #000;
+  }
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  .pacman {
+    width: 0px;
+    height: 0px;
+    border: 30px solid #e0e246;
+    border-radius: 50%;
+    border-right-color: transparent;
+  }
+  .cheese {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  .ghost {
+    width: 60px;
+    height: 60px;
+    background: #c74e4e;
+    border-radius: 50% 50% 0 0;
+    clip-path: polygon(
+      0 0,
+      0 95%,
+      16.7% calc(95% - 16%),
+      33.3% 95%,
+      50% calc(95% - 16%),
+      66.7% 95%,
+      83.3% calc(95% - 16%),
+      100% 95%,
+      100% 0
+    );
+  }
+</style>
