@@ -1,0 +1,24 @@
+<div class="parallelogram"></div>
+<div class="triangle"></div>
+<style>
+  body {
+    margin: 20 0 auto 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: #172d2c;
+  }
+  .triangle {
+    width: 180px;
+    height: 130px;
+    background: #e9af53;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+  }
+  .parallelogram {
+    width: 180px;
+    height: 235px;
+    background: #e9af53;
+    clip-path: polygon(0 0, 100% 65px, 100% 195px, 0 130px);
+    align-self: flex-end;
+  }
+</style>
