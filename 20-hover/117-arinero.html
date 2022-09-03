@@ -1,0 +1,59 @@
+<div class="A"></div>
+
+<div class="circle"></div>
+
+<div class="V"></div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(
+      0 100%,
+      30% 50%,
+      30% 0,
+      50% 0,
+      80% 0,
+      80% 50%,
+      100% 100%,
+      20% 100%
+    );
+  }
+  .A {
+    width: 216px;
+    height: 180px;
+    background: #2e2926;
+    clip-path: polygon(
+      0 100%,
+      39% 0,
+      61% 0,
+      100% 100%,
+      80% 100%,
+      50% 24%,
+      20.5% 100%
+    );
+  }
+  .circle {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #0088ca;
+    position: absolute;
+  }
+  .V {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    border: 20px solid #0088ca;
+    border-left: 0;
+    border-top: 0;
+    transform: rotate(45deg);
+    bottom: 110px;
+    left: 133px;
+    box-shadow: 8px 8px #ffffff, inset -8px -8px #ffffff;
+  }
+</style>
