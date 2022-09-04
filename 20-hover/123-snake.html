@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="ball"></div>
+  <div class="row">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="row"><div></div></div>
+
+  <div class="row"><div></div></div>
+
+  <div class="row"><div></div></div>
+
+  <div class="row">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    background: #c74e4e;
+  }
+  .container {
+    width: 220px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+  .row > div {
+    width: 20px;
+    height: 20px;
+    background: #e0e246;
+    border-radius: 5px;
+  }
+  .container > .ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+  }
+</style>
